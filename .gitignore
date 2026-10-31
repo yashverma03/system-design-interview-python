@@ -1,0 +1,108 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Environment (keep the examples)
+.env
+.env.*
+*.env
+!.env.example
+!**/.env.example
+
+# Dependencies
+node_modules
+.yarn
+.pnp.*
+bower_components
+
+# Python environments
+venv
+.venv
+env
+ENV
+.python-version
+
+# Python bytecode and caches
+__pycache__
+*.py[cod]
+*$py.class
+.pytest_cache
+.mypy_cache
+.ruff_cache
+.pyre
+.pytype
+.hypothesis
+.tox
+.nox
+*.egg-info
+.eggs
+pip-wheel-metadata
+
+# Python packaging and build
+build
+dist
+dist-ssr
+out
+output
+target
+wheels
+*.egg
+*.whl
+.cache
+.parcel-cache
+.turbo
+.next
+.nuxt
+.vite
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+
+# Tests and coverage
+coverage
+htmlcov
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+junit.xml
+test-results
+playwright-report
+.nyc_output
+
+# Django
+*.sqlite3
+*.sqlite3-journal
+db.sqlite3
+staticfiles
+media
+local_settings.py
+
+# Temp and local files
+*.local
+*.tmp*
+tmp
+temp
+*.bak
+*.swp
+*.swo
+*~
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini

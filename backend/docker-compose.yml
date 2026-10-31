@@ -1,0 +1,26 @@
+name: system-design-interview
+
+services:
+  db:
+    container_name: system-design-interview-db
+    image: postgres
+    environment:
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_DATABASE}
+    ports:
+      - ${DB_PORT}:5432
+    volumes:
+      - system-design-interview-db-data:/var/lib/postgresql
+
+  redis:
+    container_name: system-design-interview-redis
+    image: redis
+    ports:
+      - ${REDIS_PORT}:6379
+    volumes:
+      - system-design-interview-redis-data:/data
+
+volumes:
+  system-design-interview-db-data:
+  system-design-interview-redis-data:
